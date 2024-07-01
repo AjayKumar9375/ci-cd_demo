@@ -48,7 +48,10 @@ class Build : BuildType({
     }
 
     steps{
-        pythonScrip()
+        pythonScrip1()
+        pythonScrip2()
+        pythonScrip3()
+        pythonScrip4()
     }
 
     features {
