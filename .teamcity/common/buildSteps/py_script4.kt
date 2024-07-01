@@ -7,7 +7,7 @@ import jetbrains.buildServer.configs.kotlin.buildSteps.python
 
 fun BuildSteps.pythonScrip4(init: ScriptBuildStep.() -> Unit = {}){
             python {
-            id = "python_runner"
+            name = "python_runner4"
             command = file {
                 filename = "req_py_script.py"
                 scriptArguments = "requirement4.txt"
