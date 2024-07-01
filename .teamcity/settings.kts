@@ -37,7 +37,7 @@ project {
 
 class Build : BuildType({
     name = "Build"
-
+    artifactRules = "requirement.txt"
     vcs {
         root(HttpsGithubComAjayKumar9375requirementGitRefsHeadsMain)
     }
