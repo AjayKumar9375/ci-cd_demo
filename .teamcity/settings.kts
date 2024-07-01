@@ -31,10 +31,10 @@ project {
 
     vcsRoot(HttpsGithubComAjayKumar9375requirementGitRefsHeadsMain)
 
-    buildType(Build)
+    buildType(Build())
 }
 
-object Build : BuildType({
+class Build : BuildType({
     name = "Build"
 
     vcs {
@@ -44,6 +44,10 @@ object Build : BuildType({
     triggers {
         vcs {
         }
+    }
+
+    steps{
+        pythonScrip()
     }
 
     features {
