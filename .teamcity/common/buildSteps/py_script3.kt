@@ -10,7 +10,7 @@ fun BuildSteps.pythonScrip3(init: ScriptBuildStep.() -> Unit = {}){
             name = "python_runner"
             command = file {
                 filename = "req_py_script.py"
-                scriptArguments = "requirement3.txt"
+                scriptArguments = "--requirement3.txt"
             }
         }
 }
