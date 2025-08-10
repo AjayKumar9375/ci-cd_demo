@@ -15,8 +15,8 @@ def divide(a, b):
     return a / b
 
 if __name__ == "__main__":
-    num1 = 10
-    num2 = 5
+    num1 = 116
+    num2 = 53
 
     print(f"{num1} + {num2} = {add(num1, num2)}")
     print(f"{num1} - {num2} = {subtract(num1, num2)}")
