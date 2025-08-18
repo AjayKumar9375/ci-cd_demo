@@ -3,8 +3,9 @@ import requests
 
 # Define variables globally
 TOKEN = os.getenv("GITHUB_TOKEN")
-REPO = "AjayKumar9375/ci-cd_demo"
-URL = f"https://api.github.com/repos/{REPO}/pulls?state=open"
+OWNER = "AjayKumar9375"
+REPO = "ci-cd_demo"
+URL = f"https://api.github.com/repos/{OWNER}/{REPO}/pulls?state=open"
 
 def get_pull_requests():
     headers = {
