@@ -1,7 +1,7 @@
 import os
 import requests
 
-# ✅ Define variables globally
+# Define variables globally
 TOKEN = os.getenv("GITHUB_TOKEN")
 REPO = "AjayKumar9375/ci-cd_demo"
 URL = f"https://api.github.com/repos/{REPO}/pulls?state=open"
@@ -14,7 +14,7 @@ def get_pull_requests():
 
     response = requests.get(URL, headers=headers)
     if response.status_code != 200:
-        print(f"❌ Failed to fetch PRs: {response.status_code} - {response.text}")
+        print(f" Failed to fetch PRs: {response.status_code} - {response.text}")
         return
 
     prs = response.json()
@@ -23,7 +23,7 @@ def get_pull_requests():
         return
 
     for pr in prs:
-        print(f"🔹 PR Number: {pr['number']}")
+        print(f" PR Number: {pr['number']}")
         print(f"   Title: {pr['title']}")
         print(f"   Author: {pr['user']['login']}")
         print(f"   Source Branch: {pr['head']['ref']}")
