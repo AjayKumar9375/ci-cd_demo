@@ -17,3 +17,4 @@ with open('note.txt', 'w') as note:
 with open('note.txt', 'r') as note:
     content = note.read()
     print(f"Note Content: \n{content}")
+    
