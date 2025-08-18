@@ -24,12 +24,13 @@ def get_pull_requests():
         return
 
     for pr in prs:
+        print(f" URL: {pr['url']}")
         print(f" PR Number: {pr['number']}")
         print(f"   Title: {pr['title']}")
         print(f"   Author: {pr['user']['login']}")
         print(f"   Source Branch: {pr['head']['ref']}")
         print(f"   Target Branch: {pr['base']['ref']}")
-        print("")
+        print("-"*40)
 
 if __name__ == "__main__":
     get_pull_requests()
