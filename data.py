@@ -1,6 +1,6 @@
 import json
 
-data = {Name: "Ajay Kumar", Role: "DevOps Engineer", Experience: "3 years", City: "Pune"}
+data = {"Name": "Ajay Kumar", "Role": "DevOps Engineer", "Experience": "3 years", "City": "Pune"}
 with open('data.json', 'w') as file:
     json.dump(data, file, indent=4)
 
